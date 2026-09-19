@@ -24,17 +24,15 @@
                  border-radius:2px;flex:none}
   .header-title{color:#fff;font-size:clamp(18px,5vw,23px);font-weight:700}
   .header-sub{color:#c5d3e8;font-size:13px;margin-top:4px}
-  .body{padding:18px;display:flex;flex-direction:column;gap:14px}
+  .body{padding:18px;display:flex;flex-direction:column;gap:22px}
+  .group-title{font-size:15px;font-weight:600;margin:0 0 10px;padding-bottom:7px;
+               border-bottom:2px solid var(--amber);display:inline-block}
+  .items{display:flex;flex-direction:column;gap:10px}
   a.item{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);
-         border-radius:6px;padding:14px 16px;background:var(--surface)}
+         border-radius:6px;padding:13px 15px;background:var(--surface)}
   a.item:hover{border-color:var(--amber);background:var(--soft)}
-  .item h2{margin:0 0 4px;font-size:16px;font-weight:600}
-  .item p{margin:0;color:var(--muted);font-size:13.5px}
-  .item .tag{display:inline-block;margin-top:8px;font-size:11.5px;letter-spacing:.06em;
-             text-transform:uppercase;color:var(--navy);background:var(--amber);
-             border-radius:3px;padding:2px 7px;font-weight:600}
-  .soon{border-style:dashed;opacity:.75}
-  .soon .tag{background:transparent;border:1px solid var(--muted);color:var(--muted)}
+  .item b{display:block;font-size:15.5px;font-weight:600;margin-bottom:3px}
+  .item span{color:var(--muted);font-size:13.5px}
   footer{padding:14px 18px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 </style>
 </head>
@@ -49,19 +47,31 @@
   </div>
   <div class="body">
 
-    <a class="item" href="zh/b/">
-      <h2>Бирки кабельных отрезов</h2>
-      <p>СОУ001, Женское отделение. На каждый отрез — ход трассы по помещениям, схема,
-         длины гофры, кабель-канала и гильз, голосовая подсказка по концам кабеля.</p>
-      <span class="tag">СОУ001 · женское отделение</span>
-    </a>
+    <div>
+      <div class="group-title">Бирки кабельных отрезов</div>
+      <div class="items">
+        <a class="item" href="zh/b/">
+          <b>СОУ001 · Женское отделение</b>
+          <span>162 отреза: ход трассы по помещениям, схема, длины гофры, кабель-канала
+            и гильз, голосовая подсказка по концам кабеля</span>
+        </a>
+      </div>
+    </div>
 
-    <a class="item soon" href="p/">
-      <h2>Прогресс СМР</h2>
-      <p>Ход работ по объектам: СОУ001, СОУ002 и далее. Этапы, проценты выполнения,
-         сводка по корпусам.</p>
-      <span class="tag">публикуется</span>
-    </a>
+    <div>
+      <div class="group-title">Прогресс СМР</div>
+      <div class="items">
+        <a class="item" href="Prg/SOU001.html">
+          <b>СОУ001</b>
+          <span>Ульяновская психиатрическая больница: гараж, дизельная, лаборатория,
+            приёмное, женское отделение, территория</span>
+        </a>
+        <a class="item" href="Prg/SOU002.html">
+          <b>СОУ002</b>
+          <span>ход работ по этапам</span>
+        </a>
+      </div>
+    </div>
 
   </div>
   <footer>

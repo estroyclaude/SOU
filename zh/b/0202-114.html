@@ -1,0 +1,70 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><title>Отрез 0202-114 · P1</title><style>
+  :root{--navy:#1a2b4a;--amber:#f5a800;--ground:#f8f9fb;--surface:#fff;--ink:#2c2c2c;
+        --muted:#6b7a99;--line:#e4e9f2;--soft:#f0f4fb;--zebra:#f4f6fa;
+        --sc-room:rgba(26,43,74,.05);--sc-wall:#9fb0cc;--sc-bg:#fff}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+        --navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;--muted:#93a3c0;
+        --line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}}
+  :root[data-theme="dark"]{--navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;
+        --muted:#93a3c0;--line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{overflow-x:hidden;background:var(--ground);color:var(--ink);
+       font-family:"Segoe UI",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.5}
+  .card{width:100%;max-width:760px;overflow-x:hidden;margin:0 auto;background:var(--surface);
+        border:1px solid var(--line);border-top:0}
+  .mono{font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .card-header{background:var(--navy);padding:16px;display:flex;gap:12px;align-items:center}
+  .card-header>div:last-child{min-width:0}
+  .header-accent{width:4px;align-self:stretch;min-height:42px;border-radius:2px;flex:none}
+  .header-title{overflow-wrap:anywhere;color:#fff;font-size:clamp(17px,4.8vw,21px);font-weight:700;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace}
+  .header-sub{color:#c5d3e8;font-size:13px;margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 12px}
+  .header-sub span{overflow-wrap:anywhere} .header-sub b{color:#fff;font-weight:600}
+  .body{padding:18px} .section{margin-bottom:22px} .section:last-child{margin-bottom:0}
+  .section-title{font-size:15px;font-weight:600;margin-bottom:10px;padding-bottom:7px;
+                 border-bottom:2px solid var(--amber);display:inline-block}
+  .audio-box{background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+  audio{width:100%;max-width:100%;min-width:0;height:40px;display:block}
+  .audio-text{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.45}
+  .ends{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+  .end{display:flex;gap:10px;align-items:baseline;font-size:14.5px}
+  .end .len{min-width:52px;font-weight:700}
+  .scheme{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:8px;
+          margin-bottom:10px}
+  .scheme svg{display:block;width:100%;height:auto}
+  .scheme-cap{font-size:12.5px;color:var(--muted);margin:0 0 6px 2px;font-weight:600}
+  .sc-room{font:600 300px "Segoe UI",sans-serif;fill:#8a97ad;text-anchor:middle}
+  .sc-prh{font:600 250px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-role{font:400 240px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-dev{font:700 300px Consolas,monospace;fill:var(--ink);text-anchor:middle}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;table-layout:fixed}
+  thead th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:7px 9px;
+           font-size:12.5px;line-height:1.25;vertical-align:bottom}
+  tbody td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;
+           overflow-wrap:anywhere}
+  tbody tr:nth-child(even) td{background:var(--zebra)}
+  td.num,th.num{text-align:right;white-space:nowrap;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  tr.node td{font-weight:600} tr.sub td:nth-child(2){padding-left:20px;color:var(--muted)}
+  tr.total td{background:var(--soft);font-weight:700;border-top:2px solid var(--navy)}
+  .dash{color:var(--muted)} .mat{display:none}
+  th.h-mark{width:22%} th.h-m{width:12%} th.h-tag{width:10%}
+  .legend{margin:10px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+  footer{padding:14px 18px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+  @media (max-width:520px){
+    thead{display:none} table,tbody,tr,td{display:block;width:auto}
+    tr{padding:9px 0;border-bottom:1px solid var(--line)}
+    tbody tr:nth-child(even) td{background:transparent}
+    tbody tr:nth-child(even){background:var(--zebra)}
+    td{border:0;padding:1px 8px;text-align:left} td.num{text-align:left} td.dash{display:none}
+    td:first-child{font-weight:700;font-size:12.5px}
+    tr.sub td:nth-child(2){padding-left:8px;color:inherit}
+    td[data-l]:before{content:attr(data-l) ": ";color:var(--muted);font-weight:400}
+    tr.total{border-top:2px solid var(--navy);background:var(--soft)}
+    .wide{display:none} .mat{display:block}
+    .body{padding:14px 12px} .audio-box{padding:10px}
+  }
+</style></head><body><div class="card"><div class="card-header"><div class="header-accent" style="background:#008C00"></div><div><div class="header-title">СОУ001 ПС.06.0202-114</div><div class="header-sub"><span>линия <b>P1</b></span><span>отрез <b>13,62 м</b></span><span>КСРЭВнг(А)-FRLSLTx 1×2×0,97</span></div></div></div><div class="body"><div class="section"><div class="section-title">Начало монтажа отрезка</div><div class="audio-box"><p class="audio-text" style="margin-top:0">Концы одинаковые: с обеих сторон по 0,55 м кабеля из гофры — перепутать нечем.</p><div class="ends"><div class="end"><span class="len mono">55 см</span><span>кабеля из гофры &rarr; <b>PP2.4</b>, ретранслятор С2000Р-РР, пом. 2/21</span></div><div class="end"><span class="len mono">55 см</span><span>кабеля из гофры &rarr; <b>PP2.5</b>, ретранслятор С2000Р-РР, пом. 2/21</span></div></div></div></div><div class="section"><div class="section-title">Где идёт отрезок</div><div class="scheme"><svg viewBox="0 0 14079 5903" width="100%" height="234" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Схема хода отреза 0202-114"><polygon points="1923,-3916 -326,-3916 -326,-3009 708,-3009 708,-2839 -326,-2839 -326,-2418 -326,-1869 708,-1869 708,-1699 -326,-1699 -326,-1281 -326,-697 708,-697 708,-527 -326,-527 -326,-335 -326,774 1923,774 1923,-1533 1923,-1697" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="7549,-3916 4083,-3916 4083,-1615 4083,774 7688,774" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="10677,774 10628,-637 10507,-4116 7683,-4116 7828,774" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="13699,774 13557,-4116 10657,-4116 10776,-710 12191,-710 12191,774" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="10781,-570 10828,774 12051,774 12051,-570" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="11428" y="102" class="sc-room" font-size="335">52</text><polygon points="16241,774 16241,-4116 13737,-4116 13879,774" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="14887,3923 8990,3923 8990,8851 9211,8851 9211,8686 9641,8686 9641,8851 14887,8851 14887,8756" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="8840,3923 2984,3923 2984,8851 3246,8851 3246,8696 3676,8696 3676,8851 8840,8851" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="2834,3923 -3019,3923 -3019,8691 -2294,8691 -2294,8851 2834,8851" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="-17320,3503 -3084,3503 2909,3503 8915,3503 14962,3503 20987,3503 24707,3503 24651,1194 22875,1194 19431,1194 16341,1194 13795,1194 12121,1194 10760,1194 7764,1194 4003,1194 2003,1194 -451,1194 -3758,1194 -5283,1194 -6773,1194 -9393,1194 -15127,1194 -15127,1164 -15792,1164 -16962,1164 -17320,1164" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="2957" y="1788" class="sc-room" font-size="335">77</text><polygon points="3923,774 3923,-1535 2083,-1535 2083,774" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><line x1="-17917" y1="3713" x2="24793" y2="3713" stroke="var(--sc-wall)" stroke-width="420" opacity="0.5"/><line x1="2909" y1="9061" x2="2909" y2="3713" stroke="var(--sc-wall)" stroke-width="150" opacity="0.5"/><line x1="8915" y1="9061" x2="8915" y2="3713" stroke="var(--sc-wall)" stroke-width="150" opacity="0.5"/><line x1="13795" y1="984" x2="13642" y2="-4291" stroke="var(--sc-wall)" stroke-width="180" opacity="0.5"/><line x1="10760" y1="984" x2="10576" y2="-4291" stroke="var(--sc-wall)" stroke-width="150" opacity="0.5"/><line x1="7764" y1="984" x2="7611" y2="-4191" stroke="var(--sc-wall)" stroke-width="140" opacity="0.5"/><line x1="2007" y1="984" x2="2007" y2="-4191" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><line x1="4003" y1="984" x2="4003" y2="-4191" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><line x1="-15127" y1="984" x2="35148" y2="984" stroke="var(--sc-wall)" stroke-width="420" opacity="0.5"/><line x1="12121" y1="-640" x2="12121" y2="984" stroke="var(--sc-wall)" stroke-width="140" opacity="0.5"/><line x1="2003" y1="984" x2="2003" y2="-4191" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><circle cx="11670" cy="3491" r="94" fill="#008C00"/><circle cx="11670" cy="3491" r="94" fill="#008C00"/><line x1="11670" y1="3491" x2="11670" y2="2400" stroke="#008C00" stroke-width="168" stroke-linecap="round"/><line x1="11670" y1="2400" x2="2421" y2="2400" stroke="#008C00" stroke-width="168" stroke-linecap="round"/><line x1="2421" y1="2400" x2="2421" y2="3491" stroke="#008C00" stroke-width="168" stroke-linecap="round"/><circle cx="2421" cy="3491" r="94" fill="#008C00"/><circle cx="2421" cy="3491" r="94" fill="#008C00"/><polygon points="6878,2400 7213,2551 7213,2249" fill="var(--sc-bg)" stroke="#008C00" stroke-width="40" stroke-linejoin="round"/><circle cx="11679" cy="3503" r="235" fill="var(--sc-bg)" stroke="#008C00" stroke-width="84"/><text x="11679" y="3118" class="sc-dev" font-size="335">PP2.4</text><text x="11679" y="4107" class="sc-role" font-size="268">начало монтажа</text><circle cx="2400" cy="3503" r="235" fill="var(--sc-bg)" stroke="#008C00" stroke-width="84"/><text x="2400" y="3118" class="sc-dev" font-size="335">PP2.5</text><text x="2400" y="4107" class="sc-role" font-size="268">конец монтажа</text></svg></div><p class="legend">Помещения и стены полупрозрачные, трасса — цветом своей линии; кружки на концах — приборы, кружки поменьше — проходки, точки — подъёмы и опуски. Стрелки показывают направление монтажа: от конца с биркой. Север сверху.</p></div><div class="section"><div class="section-title">Полный ход отрезка</div><div class="scroll"><table><thead><tr><th class="num h-mark">Отметка<br>на кабеле, м</th><th class="h-ev">Участок трассы / событие</th><th class="num wide h-m">Гофра,<br>м</th><th class="num wide h-m">Канал,<br>м</th><th class="num wide h-m">Гильза,<br>м</th><th class="num mat h-m">Длина<br>участка</th><th class="num h-tag">Бирок,<br>шт</th></tr></thead><tbody><tr class="node"><td class="num">0,00 &rarr; 0,25</td><td>Разделка у <b>PP2.4</b> — ретранслятор С2000Р-РР, пом. 2/21 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">0,25 &rarr; 0,40</td><td>&#9492; пом. 2/21 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,15</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,15<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num tags" data-l="бирок">2</td></tr><tr class="sub"><td class="num">0,40 &rarr; 13,22</td><td>&#9492; пом. 2/21 — транзит по помещению</td><td class="num wide">12,94</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">12,94<br><span style="font-size:11px;color:var(--muted)">гофра</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">13,22 &rarr; 13,37</td><td>&#9492; пом. 2/21 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,15</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,15<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="node"><td class="num">13,37 &rarr; 13,62</td><td>Разделка у <b>PP2.5</b> — ретранслятор С2000Р-РР, пом. 2/21 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="total"><td class="num">13,62</td><td>ИТОГО на отрез</td><td class="num wide">12,94</td><td class="num wide">0,30</td><td class="num wide">0,00</td><td class="num mat" data-l="итого">13,24</td><td class="num">2</td></tr></tbody></table></div><p class="legend">Отметки накопительные от начала трассы. Технологический запас распределён по участкам — он уже внутри отметок. Строки «&#9492;» — разбивка по помещениям: гофра и кабель-канал режутся по ним, кабель идёт одним куском на весь отрез, сращивание не допускается. В проходке кабель идёт в гильзе — гофры в проходке быть не должно. Бирок 2 на помещение, где кабеля больше 1,5 м; где 1,5 м и короче — одна.</p></div></div><footer>Страница по QR с бирки · данные из кабельного журнала СОУ001-2026-06-Д-ПС-КЖ, редакция 19.09.2026</footer></div></body></html>

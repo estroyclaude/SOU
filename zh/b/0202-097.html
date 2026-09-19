@@ -1,0 +1,70 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><title>Отрез 0202-097 · ЛРО4</title><style>
+  :root{--navy:#1a2b4a;--amber:#f5a800;--ground:#f8f9fb;--surface:#fff;--ink:#2c2c2c;
+        --muted:#6b7a99;--line:#e4e9f2;--soft:#f0f4fb;--zebra:#f4f6fa;
+        --sc-room:rgba(26,43,74,.05);--sc-wall:#9fb0cc;--sc-bg:#fff}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+        --navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;--muted:#93a3c0;
+        --line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}}
+  :root[data-theme="dark"]{--navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;
+        --muted:#93a3c0;--line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{overflow-x:hidden;background:var(--ground);color:var(--ink);
+       font-family:"Segoe UI",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.5}
+  .card{width:100%;max-width:760px;overflow-x:hidden;margin:0 auto;background:var(--surface);
+        border:1px solid var(--line);border-top:0}
+  .mono{font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .card-header{background:var(--navy);padding:16px;display:flex;gap:12px;align-items:center}
+  .card-header>div:last-child{min-width:0}
+  .header-accent{width:4px;align-self:stretch;min-height:42px;border-radius:2px;flex:none}
+  .header-title{overflow-wrap:anywhere;color:#fff;font-size:clamp(17px,4.8vw,21px);font-weight:700;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace}
+  .header-sub{color:#c5d3e8;font-size:13px;margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 12px}
+  .header-sub span{overflow-wrap:anywhere} .header-sub b{color:#fff;font-weight:600}
+  .body{padding:18px} .section{margin-bottom:22px} .section:last-child{margin-bottom:0}
+  .section-title{font-size:15px;font-weight:600;margin-bottom:10px;padding-bottom:7px;
+                 border-bottom:2px solid var(--amber);display:inline-block}
+  .audio-box{background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+  audio{width:100%;max-width:100%;min-width:0;height:40px;display:block}
+  .audio-text{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.45}
+  .ends{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+  .end{display:flex;gap:10px;align-items:baseline;font-size:14.5px}
+  .end .len{min-width:52px;font-weight:700}
+  .scheme{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:8px;
+          margin-bottom:10px}
+  .scheme svg{display:block;width:100%;height:auto}
+  .scheme-cap{font-size:12.5px;color:var(--muted);margin:0 0 6px 2px;font-weight:600}
+  .sc-room{font:600 300px "Segoe UI",sans-serif;fill:#8a97ad;text-anchor:middle}
+  .sc-prh{font:600 250px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-role{font:400 240px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-dev{font:700 300px Consolas,monospace;fill:var(--ink);text-anchor:middle}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;table-layout:fixed}
+  thead th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:7px 9px;
+           font-size:12.5px;line-height:1.25;vertical-align:bottom}
+  tbody td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;
+           overflow-wrap:anywhere}
+  tbody tr:nth-child(even) td{background:var(--zebra)}
+  td.num,th.num{text-align:right;white-space:nowrap;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  tr.node td{font-weight:600} tr.sub td:nth-child(2){padding-left:20px;color:var(--muted)}
+  tr.total td{background:var(--soft);font-weight:700;border-top:2px solid var(--navy)}
+  .dash{color:var(--muted)} .mat{display:none}
+  th.h-mark{width:22%} th.h-m{width:12%} th.h-tag{width:10%}
+  .legend{margin:10px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+  footer{padding:14px 18px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+  @media (max-width:520px){
+    thead{display:none} table,tbody,tr,td{display:block;width:auto}
+    tr{padding:9px 0;border-bottom:1px solid var(--line)}
+    tbody tr:nth-child(even) td{background:transparent}
+    tbody tr:nth-child(even){background:var(--zebra)}
+    td{border:0;padding:1px 8px;text-align:left} td.num{text-align:left} td.dash{display:none}
+    td:first-child{font-weight:700;font-size:12.5px}
+    tr.sub td:nth-child(2){padding-left:8px;color:inherit}
+    td[data-l]:before{content:attr(data-l) ": ";color:var(--muted);font-weight:400}
+    tr.total{border-top:2px solid var(--navy);background:var(--soft)}
+    .wide{display:none} .mat{display:block}
+    .body{padding:14px 12px} .audio-box{padding:10px}
+  }
+</style></head><body><div class="card"><div class="card-header"><div class="header-accent" style="background:#8C4614"></div><div><div class="header-title">СОУ001 ПС.06.0202-097</div><div class="header-sub"><span>линия <b>ЛРО4</b></span><span>отрез <b>2,22 м</b></span><span>КСРЭВнг(А)-FRLSLTx 1×2×0,97</span></div></div></div><div class="body"><div class="section"><div class="section-title">Начало монтажа отрезка</div><div class="audio-box"><audio controls preload="none" src="a/0202-097.mp3"></audio><p class="audio-text">&laquo;Короткий конец, 34 сантиметров, — в речевой оповещатель, помещение 21. Длинный, 79, — в речевой оповещатель, помещение 13. Отрез 097, линия ЛРО4.&raquo;</p><div class="ends"><div class="end"><span class="len mono">34 см</span><span>кабеля из гофры &rarr; <b>1BIAD4.19</b>, оповещатель ОПР-С106.1, пом. 2/21</span></div><div class="end"><span class="len mono">79 см</span><span>кабеля из гофры &rarr; <b>1BIAD4.18</b>, оповещатель ОПР-С106.1, пом. 2/13</span></div></div></div></div><div class="section"><div class="section-title">Где идёт отрезок</div><div class="scheme"><svg viewBox="0 0 5305 5245" width="100%" height="553" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Схема хода отреза 0202-097"><polygon points="1232,-2277 -1017,-2277 -1017,-1370 17,-1370 17,-1200 -1017,-1200 -1017,-779 -1017,-230 17,-230 17,-60 -1017,-60 -1017,358 -1017,942 17,942 17,1112 -1017,1112 -1017,1304 -1017,2413 1232,2413 1232,106 1232,-58" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="6858,-2277 3392,-2277 3392,24 3392,2413 6997,2413" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="4806" y="59" class="sc-room" font-size="126">49</text><polygon points="-18011,5142 -3775,5142 2218,5142 8224,5142 14271,5142 20296,5142 24016,5142 23960,2833 22184,2833 18740,2833 15650,2833 13104,2833 11430,2833 10069,2833 7073,2833 3312,2833 1312,2833 -1142,2833 -4449,2833 -5974,2833 -7464,2833 -10084,2833 -15818,2833 -15818,2803 -16483,2803 -17653,2803 -18011,2803" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="2266" y="3427" class="sc-room" font-size="126">77</text><polygon points="3232,2413 3232,104 1392,104 1392,2413" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="2312" y="1258" class="sc-room" font-size="126">48.1</text><line x1="1316" y1="2623" x2="1316" y2="-2552" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><line x1="3312" y1="2623" x2="3312" y2="-2552" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><line x1="-15818" y1="2623" x2="34457" y2="2623" stroke="var(--sc-wall)" stroke-width="420" opacity="0.5"/><line x1="-1142" y1="1027" x2="17" y2="1027" stroke="var(--sc-wall)" stroke-width="170" opacity="0.5"/><line x1="1312" y1="2623" x2="1312" y2="-2552" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><line x1="1316" y1="24" x2="3312" y2="24" stroke="var(--sc-wall)" stroke-width="160" opacity="0.5"/><circle cx="2400" cy="2845" r="35" fill="#8C4614"/><circle cx="2400" cy="2845" r="35" fill="#8C4614"/><line x1="2400" y1="2845" x2="2400" y2="2833" stroke="#8C4614" stroke-width="63" stroke-linecap="round"/><line x1="2400" y1="2833" x2="2400" y2="2413" stroke="#8C4614" stroke-width="63" stroke-linecap="round"/><line x1="2400" y1="2413" x2="2400" y2="2400" stroke="#8C4614" stroke-width="63" stroke-linecap="round"/><line x1="2400" y1="2400" x2="2860" y2="2400" stroke="#8C4614" stroke-width="63" stroke-linecap="round"/><circle cx="2860" cy="2400" r="35" fill="#8C4614"/><circle cx="2400" cy="2623" r="57" fill="var(--sc-bg)" stroke="#8C4614" stroke-width="23"/><text x="2400" y="2837" class="sc-prh" font-size="107">проходка 2/13 → 2/21</text><circle cx="2415" cy="2833" r="88" fill="var(--sc-bg)" stroke="#8C4614" stroke-width="32"/><text x="2415" y="2687" class="sc-dev" font-size="126">1BIAD4.19</text><text x="2415" y="3060" class="sc-role" font-size="101">начало монтажа</text><circle cx="2905" cy="2413" r="88" fill="var(--sc-bg)" stroke="#8C4614" stroke-width="32"/><text x="2905" y="2267" class="sc-dev" font-size="126">1BIAD4.18</text><text x="2905" y="2640" class="sc-role" font-size="101">конец монтажа</text></svg></div><p class="legend">Помещения и стены полупрозрачные, трасса — цветом своей линии; кружки на концах — приборы, кружки поменьше — проходки, точки — подъёмы и опуски. Стрелки показывают направление монтажа: от конца с биркой. Север сверху.</p></div><div class="section"><div class="section-title">Полный ход отрезка</div><div class="scroll"><table><thead><tr><th class="num h-mark">Отметка<br>на кабеле, м</th><th class="h-ev">Участок трассы / событие</th><th class="num wide h-m">Гофра,<br>м</th><th class="num wide h-m">Канал,<br>м</th><th class="num wide h-m">Гильза,<br>м</th><th class="num mat h-m">Длина<br>участка</th><th class="num h-tag">Бирок,<br>шт</th></tr></thead><tbody><tr class="node"><td class="num">0,00 &rarr; 0,25</td><td>Разделка у <b>1BIAD4.18</b> — оповещатель ОПР-С106.1, пом. 2/13 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">0,25 &rarr; 0,35</td><td>&#9492; пом. 2/21 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,09</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,09<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num tags" data-l="бирок">1</td></tr><tr class="sub"><td class="num">0,35 &rarr; 0,93</td><td>&#9492; пом. 2/21 — транзит по помещению</td><td class="num wide">0,74</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,74<br><span style="font-size:11px;color:var(--muted)">гофра</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">0,93 &rarr; 1,39</td><td>&#9492; проходка 2/13 → пом. 2/21</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num wide">0,42</td><td class="num mat" data-l="длина">0,42<br><span style="font-size:11px;color:var(--muted)">гильза</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">1,39 &rarr; 1,84</td><td>&#9492; пом. 2/13 — по стене в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,41</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,41<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num tags" data-l="бирок">1</td></tr><tr class="sub"><td class="num">1,84 &rarr; 1,97</td><td>&#9492; пом. 2/13 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,12</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,12<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="node"><td class="num">1,97 &rarr; 2,22</td><td>Разделка у <b>1BIAD4.19</b> — оповещатель ОПР-С106.1, пом. 2/21 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="total"><td class="num">2,22</td><td>ИТОГО на отрез</td><td class="num wide">0,74</td><td class="num wide">0,63</td><td class="num wide">0,42</td><td class="num mat" data-l="итого">1,79</td><td class="num">2</td></tr></tbody></table></div><p class="legend">Отметки накопительные от начала трассы. Технологический запас распределён по участкам — он уже внутри отметок. Строки «&#9492;» — разбивка по помещениям: гофра и кабель-канал режутся по ним, кабель идёт одним куском на весь отрез, сращивание не допускается. В проходке кабель идёт в гильзе — гофры в проходке быть не должно. Бирок 2 на помещение, где кабеля больше 1,5 м; где 1,5 м и короче — одна.</p></div></div><footer>Страница по QR с бирки · данные из кабельного журнала СОУ001-2026-06-Д-ПС-КЖ, редакция 19.09.2026</footer></div></body></html>

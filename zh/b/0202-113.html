@@ -1,0 +1,70 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><title>Отрез 0202-113 · P1</title><style>
+  :root{--navy:#1a2b4a;--amber:#f5a800;--ground:#f8f9fb;--surface:#fff;--ink:#2c2c2c;
+        --muted:#6b7a99;--line:#e4e9f2;--soft:#f0f4fb;--zebra:#f4f6fa;
+        --sc-room:rgba(26,43,74,.05);--sc-wall:#9fb0cc;--sc-bg:#fff}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+        --navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;--muted:#93a3c0;
+        --line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}}
+  :root[data-theme="dark"]{--navy:#16233c;--ground:#0f1626;--surface:#172236;--ink:#e8edf5;
+        --muted:#93a3c0;--line:#2a3852;--soft:#1c2a42;--zebra:#1b2739;
+        --sc-room:rgba(157,182,224,.08);--sc-wall:#48607f;--sc-bg:#172236}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{overflow-x:hidden;background:var(--ground);color:var(--ink);
+       font-family:"Segoe UI",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.5}
+  .card{width:100%;max-width:760px;overflow-x:hidden;margin:0 auto;background:var(--surface);
+        border:1px solid var(--line);border-top:0}
+  .mono{font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  .card-header{background:var(--navy);padding:16px;display:flex;gap:12px;align-items:center}
+  .card-header>div:last-child{min-width:0}
+  .header-accent{width:4px;align-self:stretch;min-height:42px;border-radius:2px;flex:none}
+  .header-title{overflow-wrap:anywhere;color:#fff;font-size:clamp(17px,4.8vw,21px);font-weight:700;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace}
+  .header-sub{color:#c5d3e8;font-size:13px;margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 12px}
+  .header-sub span{overflow-wrap:anywhere} .header-sub b{color:#fff;font-weight:600}
+  .body{padding:18px} .section{margin-bottom:22px} .section:last-child{margin-bottom:0}
+  .section-title{font-size:15px;font-weight:600;margin-bottom:10px;padding-bottom:7px;
+                 border-bottom:2px solid var(--amber);display:inline-block}
+  .audio-box{background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+  audio{width:100%;max-width:100%;min-width:0;height:40px;display:block}
+  .audio-text{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.45}
+  .ends{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+  .end{display:flex;gap:10px;align-items:baseline;font-size:14.5px}
+  .end .len{min-width:52px;font-weight:700}
+  .scheme{border:1px solid var(--line);border-radius:6px;background:var(--surface);padding:8px;
+          margin-bottom:10px}
+  .scheme svg{display:block;width:100%;height:auto}
+  .scheme-cap{font-size:12.5px;color:var(--muted);margin:0 0 6px 2px;font-weight:600}
+  .sc-room{font:600 300px "Segoe UI",sans-serif;fill:#8a97ad;text-anchor:middle}
+  .sc-prh{font:600 250px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-role{font:400 240px "Segoe UI",sans-serif;fill:var(--muted);text-anchor:middle}
+  .sc-dev{font:700 300px Consolas,monospace;fill:var(--ink);text-anchor:middle}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;table-layout:fixed}
+  thead th{background:var(--navy);color:#fff;font-weight:600;text-align:left;padding:7px 9px;
+           font-size:12.5px;line-height:1.25;vertical-align:bottom}
+  tbody td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;
+           overflow-wrap:anywhere}
+  tbody tr:nth-child(even) td{background:var(--zebra)}
+  td.num,th.num{text-align:right;white-space:nowrap;
+                font-family:Consolas,"SF Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  tr.node td{font-weight:600} tr.sub td:nth-child(2){padding-left:20px;color:var(--muted)}
+  tr.total td{background:var(--soft);font-weight:700;border-top:2px solid var(--navy)}
+  .dash{color:var(--muted)} .mat{display:none}
+  th.h-mark{width:22%} th.h-m{width:12%} th.h-tag{width:10%}
+  .legend{margin:10px 0 0;font-size:12.5px;color:var(--muted);line-height:1.5}
+  footer{padding:14px 18px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+  @media (max-width:520px){
+    thead{display:none} table,tbody,tr,td{display:block;width:auto}
+    tr{padding:9px 0;border-bottom:1px solid var(--line)}
+    tbody tr:nth-child(even) td{background:transparent}
+    tbody tr:nth-child(even){background:var(--zebra)}
+    td{border:0;padding:1px 8px;text-align:left} td.num{text-align:left} td.dash{display:none}
+    td:first-child{font-weight:700;font-size:12.5px}
+    tr.sub td:nth-child(2){padding-left:8px;color:inherit}
+    td[data-l]:before{content:attr(data-l) ": ";color:var(--muted);font-weight:400}
+    tr.total{border-top:2px solid var(--navy);background:var(--soft)}
+    .wide{display:none} .mat{display:block}
+    .body{padding:14px 12px} .audio-box{padding:10px}
+  }
+</style></head><body><div class="card"><div class="card-header"><div class="header-accent" style="background:#008C00"></div><div><div class="header-title">СОУ001 ПС.06.0202-113</div><div class="header-sub"><span>линия <b>P1</b></span><span>отрез <b>4,96 м</b></span><span>КСРЭВнг(А)-FRLSLTx 1×2×0,97</span></div></div></div><div class="body"><div class="section"><div class="section-title">Начало монтажа отрезка</div><div class="audio-box"><p class="audio-text" style="margin-top:0">Концы одинаковые: с обеих сторон по 0,55 м кабеля из гофры — перепутать нечем.</p><div class="ends"><div class="end"><span class="len mono">55 см</span><span>кабеля из гофры &rarr; <b>PP2.4</b>, ретранслятор С2000Р-РР, пом. 2/21</span></div><div class="end"><span class="len mono">55 см</span><span>кабеля из гофры &rarr; <b>APP2</b>, радиорасширитель С2000Р-АРР125, пом. 2/21</span></div></div></div></div><div class="section"><div class="section-title">Где идёт отрезок</div><div class="scheme"><svg viewBox="0 0 5430 7109" width="100%" height="733" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Схема хода отреза 0202-113"><polygon points="1398,1980 1349,569 1228,-2910 -1596,-2910 -1451,1980" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="4420,1980 4278,-2910 1378,-2910 1497,496 2912,496 2912,1980" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="1502,636 1549,1980 2772,1980 2772,636" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><text x="2149" y="1308" class="sc-room" font-size="169">52</text><polygon points="6962,1980 6962,-2910 4458,-2910 4600,1980" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="5608,5129 -289,5129 -289,10057 -68,10057 -68,9892 362,9892 362,10057 5608,10057 5608,9962" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><polygon points="-26599,4709 -12363,4709 -6370,4709 -364,4709 5683,4709 11708,4709 15428,4709 15372,2400 13596,2400 10152,2400 7062,2400 4516,2400 2842,2400 1481,2400 -1515,2400 -5276,2400 -7276,2400 -9730,2400 -13037,2400 -14562,2400 -16052,2400 -18672,2400 -24406,2400 -24406,2370 -25071,2370 -26241,2370 -26599,2370" fill="var(--sc-room)" stroke="var(--sc-wall)" stroke-width="30"/><line x1="-27196" y1="4919" x2="15514" y2="4919" stroke="var(--sc-wall)" stroke-width="420" opacity="0.5"/><line x1="4516" y1="2190" x2="4363" y2="-3085" stroke="var(--sc-wall)" stroke-width="180" opacity="0.5"/><line x1="1481" y1="2190" x2="1297" y2="-3085" stroke="var(--sc-wall)" stroke-width="150" opacity="0.5"/><line x1="-24406" y1="2190" x2="25869" y2="2190" stroke="var(--sc-wall)" stroke-width="420" opacity="0.5"/><line x1="2913" y1="566" x2="1424" y2="566" stroke="var(--sc-wall)" stroke-width="140" opacity="0.5"/><line x1="2842" y1="566" x2="2842" y2="2190" stroke="var(--sc-wall)" stroke-width="140" opacity="0.5"/><circle cx="2421" cy="4697" r="47" fill="#008C00"/><circle cx="2421" cy="4697" r="47" fill="#008C00"/><line x1="2421" y1="4697" x2="2421" y2="3606" stroke="#008C00" stroke-width="85" stroke-linecap="round"/><line x1="2421" y1="3606" x2="3029" y2="3606" stroke="#008C00" stroke-width="85" stroke-linecap="round"/><line x1="3029" y1="3606" x2="3029" y2="2412" stroke="#008C00" stroke-width="85" stroke-linecap="round"/><circle cx="3029" cy="2412" r="47" fill="#008C00"/><circle cx="3029" cy="2412" r="47" fill="#008C00"/><circle cx="2400" cy="4709" r="118" fill="var(--sc-bg)" stroke="#008C00" stroke-width="42"/><text x="2400" y="4514" class="sc-dev" font-size="169">PP2.4</text><text x="2400" y="5014" class="sc-role" font-size="135">начало монтажа</text><circle cx="3030" cy="2400" r="118" fill="var(--sc-bg)" stroke="#008C00" stroke-width="42"/><text x="3030" y="2205" class="sc-dev" font-size="169">APP2</text><text x="3030" y="2705" class="sc-role" font-size="135">конец монтажа</text></svg></div><p class="legend">Помещения и стены полупрозрачные, трасса — цветом своей линии; кружки на концах — приборы, кружки поменьше — проходки, точки — подъёмы и опуски. Стрелки показывают направление монтажа: от конца с биркой. Север сверху.</p></div><div class="section"><div class="section-title">Полный ход отрезка</div><div class="scroll"><table><thead><tr><th class="num h-mark">Отметка<br>на кабеле, м</th><th class="h-ev">Участок трассы / событие</th><th class="num wide h-m">Гофра,<br>м</th><th class="num wide h-m">Канал,<br>м</th><th class="num wide h-m">Гильза,<br>м</th><th class="num mat h-m">Длина<br>участка</th><th class="num h-tag">Бирок,<br>шт</th></tr></thead><tbody><tr class="node"><td class="num">0,00 &rarr; 0,25</td><td>Разделка у <b>PP2.4</b> — ретранслятор С2000Р-РР, пом. 2/21 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">0,25 &rarr; 0,40</td><td>&#9492; пом. 2/21 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,15</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,15<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num tags" data-l="бирок">2</td></tr><tr class="sub"><td class="num">0,40 &rarr; 4,56</td><td>&#9492; пом. 2/21 — транзит по помещению</td><td class="num wide">4,23</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">4,23<br><span style="font-size:11px;color:var(--muted)">гофра</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="sub"><td class="num">4,56 &rarr; 4,71</td><td>&#9492; пом. 2/21 — спуск к прибору в кабель-канале</td><td class="num dash wide">&mdash;</td><td class="num wide">0,15</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">0,15<br><span style="font-size:11px;color:var(--muted)">канал</span></td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="node"><td class="num">4,71 &rarr; 4,96</td><td>Разделка у <b>APP2</b> — радиорасширитель С2000Р-АРР125, пом. 2/21 · запас 0,25 м</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num dash wide">&mdash;</td><td class="num mat" data-l="длина">&mdash;</td><td class="num dash tags" data-l="бирок">&mdash;</td></tr><tr class="total"><td class="num">4,96</td><td>ИТОГО на отрез</td><td class="num wide">4,23</td><td class="num wide">0,30</td><td class="num wide">0,00</td><td class="num mat" data-l="итого">4,53</td><td class="num">2</td></tr></tbody></table></div><p class="legend">Отметки накопительные от начала трассы. Технологический запас распределён по участкам — он уже внутри отметок. Строки «&#9492;» — разбивка по помещениям: гофра и кабель-канал режутся по ним, кабель идёт одним куском на весь отрез, сращивание не допускается. В проходке кабель идёт в гильзе — гофры в проходке быть не должно. Бирок 2 на помещение, где кабеля больше 1,5 м; где 1,5 м и короче — одна.</p></div></div><footer>Страница по QR с бирки · данные из кабельного журнала СОУ001-2026-06-Д-ПС-КЖ, редакция 19.09.2026</footer></div></body></html>
